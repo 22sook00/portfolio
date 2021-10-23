@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-export const Container = styled.main`
+export const Container = styled.div`
   min-height: 100%;
-  /* position: relative; */
+  position :relative;
 `;
 export const ThemeContainer = styled.div`
   display: flex;
@@ -10,15 +10,5 @@ export const ThemeContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 0px 28px;
   transition: all 0.2s linear;
-  /* width: calc(100%-2rem); */
-  height: 100vh;
-  & h2 {
-    font-size: 48px;
-    font-weight: 500;
-    padding-bottom: 40px;
-    color: ${({ theme }) => theme.textColor};
-    text-align: center;
-  }
 `;

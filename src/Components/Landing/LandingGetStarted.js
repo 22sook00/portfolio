@@ -1,12 +1,13 @@
 import React from 'react'
-import {LandingGetStartedWrapper} from '../Landing/StyledLanding'
+import {LandingGetStartedWrapper,BelowIcon,P} from '../Landing/StyledLanding'
 import {FlexBox} from '../../Theme/GlobalStyle'
 
 function LandingGetStarted() {
   return (
     <LandingGetStartedWrapper>
       <FlexBox>
-      <p>GetStarted</p>
+      <P>View<br/>More</P>
+      {/* <BelowIcon>👇🏼</BelowIcon> */}
       </FlexBox>
     </LandingGetStartedWrapper>
   )

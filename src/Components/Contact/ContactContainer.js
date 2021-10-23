@@ -1,10 +1,10 @@
 import React from 'react'
-import {Wrapper} from '../../Theme/GlobalStyle'
+import {Wrapper,Title} from '../../Theme/GlobalStyle'
 
 function ContactContainer() {
   return (
     <Wrapper>
-      ContactContainer
+      <Title>Contact</Title>
     </Wrapper>
   )
 }

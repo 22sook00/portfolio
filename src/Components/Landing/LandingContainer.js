@@ -1,24 +1,22 @@
 import React from 'react'
-import {LandingWrapper,TextBox,ImgBox } from './StyledLanding'
+import {LandingWrapper,TextBox,H1,H2,H3,P } from './StyledLanding'
 import {FlexBox} from '../../Theme/GlobalStyle'
-// import { useTheme } from '../../Context/themeProvider'
+import { useTheme } from '../../Context/themeProvider'
 
 function LandingContainer() {
 
-  return (
-    <LandingWrapper>
-      <FlexBox>
-        <TextBox>
-          <h1>LEE SOOKYOUNG</h1>
-          <h2>FrontENdDeveloper</h2>
-          <p>새로운 시작이 기대되는</p>
-          <p>신입 프론트엔드 개발자</p>
-          <p><span>이숙영</span> 입니다.</p>
-        </TextBox>
+  const ThemeMode = useTheme();
 
-        <ImgBox>
-          <img src = '/' alt = '이미지사진'/>
-        </ImgBox>
+  return (
+    <LandingWrapper theme = {ThemeMode[0]}>
+      <FlexBox col className = 'flex'>
+        <TextBox>
+          <H3>"더 나은 코드, <br/>더 나은 디자인을 위해 고민하는 개발자."</H3>
+
+          <H1>LEE SOOKYOUNG</H1>
+          <H2>FrontEndDeveloper<br/>
+          이숙영 입니다.</H2>
+        </TextBox>
       </FlexBox>
     </LandingWrapper>
   )

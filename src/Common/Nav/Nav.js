@@ -1,17 +1,29 @@
 import React from 'react'
-import {NavContainer,NavUl,NavLi} from './StyledNav'
-import {Title} from '../../Theme/GlobalStyle'
+import {NavContainer,Navs,NavUl,NavLi} from './StyledNav'
+import { useTheme } from '../../Context/themeProvider'
+import { Title } from '../../Theme/GlobalStyle';
 
-function Nav() {
+
+function Nav({ toggle, mode }) {
+
+  const ThemeMode = useTheme();
+
   return (
-    <NavContainer>
-      <Title>Context</Title>
-      <NavUl>
-        <NavLi>Who Am I</NavLi>
-        <NavLi>Skills</NavLi>
-        <NavLi>Portfolio</NavLi>
-        <NavLi>Contact</NavLi>
-      </NavUl>
+
+    <NavContainer theme = {ThemeMode[0]}>
+      <Title>LSY.portfolio</Title>
+      <Navs>
+        <NavUl>
+          <NavLi>About Me</NavLi>
+          <NavLi>Portfolio</NavLi>
+          <NavLi>Contact</NavLi>
+          <NavLi onClick={toggle} mode={mode}>
+            {ThemeMode[0] === 'light' ? 'Dark Mode' : 'White Mode'}
+            <div className = {mode === 'dark' ? 'toggle-container toggle--checked' : 'toggle-container'}/>
+            <div className = {mode === 'dark' ? 'toggle-circle toggle--checked' : 'toggle-circle'} />
+          </NavLi>
+        </NavUl>
+      </Navs>
     </NavContainer>
   )
 }

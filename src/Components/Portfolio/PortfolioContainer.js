@@ -1,28 +1,35 @@
 /* eslint-disable jsx-a11y/heading-has-content */
 import React,{useState} from 'react'
 import {GridDiv,PortBox,SkillHashtagDiv} from './StyledPortfolio'
-import {HashLi} from '../../Common/Nav/StyledNav'
-import {Wrapper,Title} from '../../Theme/GlobalStyle'
+import {PortfolioWrapper,HashLi,H2,H4} from '../Portfolio/StyledPortfolio'
+import {Wrapper,Title, FlexBox} from '../../Theme/GlobalStyle'
 import {portfolioDatas} from '../../Asset/datas'
+import { useTheme } from '../../Context/themeProvider'
 
 import SkillsContainer from './SkillsContainer'
 
 function PortfolioContainer() {
 
+  const ThemeMode = useTheme();
   const [selectPortDatas,setSelectPortDatas] = useState(portfolioDatas);
   const hashTagHandler = (hashTag) => {
 
-    const filtering = selectPortDatas.filter((el) => {
-      for(let i = 0; i<el.skill.length; i++){
-        if(el.skill[i]=== hashTag){
-          return el
+    if(hashTag === 'All'){
+      setSelectPortDatas(portfolioDatas)
+    }else{
+      const filtering = portfolioDatas.filter((el) => {
+        for(let i = 0; i<el.skill.length; i++){
+          if(el.skill[i]=== hashTag){
+            return el
+          }
         }
-      }
-    })
-    setSelectPortDatas(filtering)
+      })
+      setSelectPortDatas(filtering)
+    }
   }
 
   return (
+    <PortfolioWrapper theme = {ThemeMode[0]}>
     <Wrapper>
       <Title>Portfolio</Title>
       <SkillsContainer 
@@ -30,23 +37,30 @@ function PortfolioContainer() {
       <GridDiv>
         {selectPortDatas.map((el)=>{
           return (
-            <PortBox key = {el.id}>
-              <h3>{el.type}</h3>
-              <h2>{el.name}</h2>
-              <p>{el.desc}</p>
+            <PortBox 
+            theme = {ThemeMode[0]}
+            key = {el.id}>
+              <FlexBox between>
+              <H2>{el.name}</H2> 
+              <H4>{el.type}</H4>
+              </FlexBox>
+              <p>{el.date}</p>
+              <p>서비스 소개 : {el.desc}</p>
               <SkillHashtagDiv>
               {el.skill.map((hash,idx)=>{
                 return (
-                  <HashLi key = {idx}>{hash}</HashLi>
+                  <HashLi 
+                  smaller
+                  key = {idx}>{hash}</HashLi>
                 )
               })}
             </SkillHashtagDiv>
           </PortBox>
           )
         })}
-          
       </GridDiv>
     </Wrapper>
+    </PortfolioWrapper>
   )
 }
 

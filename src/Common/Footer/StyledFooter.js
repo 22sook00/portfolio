@@ -1,7 +1,9 @@
 import styled from 'styled-components'
+import {LightLandingBackground,DarkLandingBackground} from '../../Theme/GlobalStyle'
 
 export const FooterContainer = styled.footer`
-background-color: #f7f7f7;
+background : 
+${({ theme }) => theme ==='light' ? 'lightGrey' : DarkLandingBackground};
 width : 100vw;
 height : 100%;
 display: flex;
