@@ -17,12 +17,10 @@ function App() {
       <ThemeProvider>
         <GlobalStyle />
         <AppLayout>
-
           <Landing/>
           <Intro/>
           <Portfolio/>
           <Contact/>
-
           <Footer/>
         </AppLayout>
       </ThemeProvider>

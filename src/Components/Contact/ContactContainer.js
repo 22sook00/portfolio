@@ -3,7 +3,7 @@ import {Wrapper,Title} from '../../Theme/GlobalStyle'
 
 function ContactContainer() {
   return (
-    <Wrapper>
+    <Wrapper id = 'contact'>
       <Title>Contact</Title>
     </Wrapper>
   )

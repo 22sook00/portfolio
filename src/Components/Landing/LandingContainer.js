@@ -8,7 +8,7 @@ function LandingContainer() {
   const ThemeMode = useTheme();
 
   return (
-    <LandingWrapper theme = {ThemeMode[0]}>
+    <LandingWrapper theme = {ThemeMode[0]} id="main">
       <FlexBox col className = 'flex'>
         <TextBox>
           <H3>"더 나은 코드, <br/>더 나은 디자인을 위해 고민하는 개발자."</H3>

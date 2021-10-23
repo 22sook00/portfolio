@@ -29,7 +29,7 @@ function PortfolioContainer() {
   }
 
   return (
-    <PortfolioWrapper theme = {ThemeMode[0]}>
+    <PortfolioWrapper theme = {ThemeMode[0]} id ='portfolio'>
     <Wrapper>
       <Title>Portfolio</Title>
       <SkillsContainer 

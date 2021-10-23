@@ -4,7 +4,7 @@ import {Wrapper,FlexBox,Title} from '../../Theme/GlobalStyle'
 
 function IntroContainer() {
   return (
-    <Wrapper>
+    <Wrapper id = 'aboutme'>
       <Title>About Me</Title>
       <TextBox>      
         <H2>공항 지상직에서 프론트엔드 개발자로,</H2>
