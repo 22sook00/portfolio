@@ -1,14 +1,12 @@
 import styled from 'styled-components'
 import {DarkLandingBackground} from '../../Theme/GlobalStyle'
 
-
 export const NavContainer = styled.header`
   display: none;
 @media screen and (min-width: 767px) {
   width: 100%;
   height : 70px;
-  margin : 20px 10px;
-  padding : 20px;
+  padding : 50px;
   box-sizing: border-box;
   position: fixed;
   top:0;
@@ -17,19 +15,28 @@ export const NavContainer = styled.header`
   display : flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 20px;
+  box-shadow: 0 1px 0.3rem hsl(0deg 0% 80% / 80%);
+  z-index: 100000;
+  transition : all 0.5s;
   background : transparent;
-  color :#fff;
+  color : #fff;
   font-weight: 800;
   font : inherit;
   font-family: 'NanumSquareRound';
 }
 `
 export const Navs = styled.nav`  
->ul>li{
+>ul>a>.makeBgColorText,ul>.makeBgColorText{
+  color : #31302E;
+}
+>ul>a>li , ul>li{
   color : #fff;
+  &:hover{
+    opacity: 0.7;
+  }
 }
 `
+//mobile
 export const MobileHeaderContainer = styled.header`
   display : unset;
   position: fixed;
@@ -39,7 +46,8 @@ export const MobileHeaderContainer = styled.header`
   margin : 0;
   width : 100%;
   height : 70px;
-  background-color: transparent;
+  background-color: transparent;  
+  z-index: 100000;
   font-weight: 800;
   font : inherit;
   font-family: 'NanumSquareRound';
@@ -141,6 +149,9 @@ color : grey;
 cursor: pointer;
 display: table;
 text-align: -webkit-match-parent;
+&:hover{
+    opacity: 0.7;
+  }
 @media screen and (min-width: 767px) {
   font-size: 20px;
   display: inline-block;

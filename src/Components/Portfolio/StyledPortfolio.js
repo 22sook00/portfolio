@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { LightLandingBackground,DarkLandingBackground } from '../../Theme/GlobalStyle'
+import { DarkLandingBackground } from '../../Theme/GlobalStyle'
 
 export const PortfolioWrapper = styled.section`
 width : 100%;
@@ -7,17 +7,14 @@ background :
   ${({ theme }) => theme ==='light' ? 
   '#ebecf5' 
   :
-  DarkLandingBackground};
+  'rgb(8,23,49)'};
 `
 export const GridDiv = styled.div`
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-gap : 20px;
-@media screen and (max-width: 767px) {
-  display: unset;
+
+@media screen and (min-width: 767px) {
 }
 `
-export const PortBox = styled.div`
+export const PortBox = styled.article`
 background : 
   ${({ theme }) => theme ==='light' ? 
   '#f8f7f4'
@@ -33,22 +30,47 @@ box-shadow: rgb(0 0 0 / 10%) 0px 2px 16px 1px;
 &:hover{
   transform: translateX(10px);
   transition: 0.5s;
-  background:${LightLandingBackground};
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   
 }
 `
-export const H2 = styled.h2`
+export const PortTitle = styled.h2`
 font-size: 24px;
+font-weight: 700;
+`
+export const PortImg = styled.img`
+width : 100%;
+margin : 20px 0;
+box-shadow: rgb(0 0 0 / 10%) 0px 2px 16px 1px;
 `
 export const H3 = styled.h3`
 font-size: 20px;
 margin : 10px 0;
 `
 export const H4 = styled.h4`
-font-size: 16px;
-margin : 10px 0;
+font-size: 14px;
+margin : 10px 0 0;
+text-align: right;
+color : grey;
+`
+export const P = styled.p`
+font-size : 14px;
+line-height: 24px;
+>a{
+  font-weight : 900;
+  color : 
+  ${({ theme }) => theme ==='light' ? 
+  '#31302e'
+  :
+  '#adb7da'};
+  text-decoration: none;
+  &:hover{
+    color : #007bff;
+  }
+}
+@media screen and (min-width: 767px) {
+}
 `
 export const SkillHashtagDiv = styled.div`
 text-align: right;

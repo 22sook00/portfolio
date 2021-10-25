@@ -8,7 +8,7 @@ function SkillsContainer({hashTagHandler}) {
   const ThemeMode = useTheme();
 
   return (
-    <article theme = {ThemeMode[0]}>
+    <div theme = {ThemeMode[0]}>
       <HashUl>
       {skillHashtag.map((el,idx)=>{
         return (
@@ -19,7 +19,7 @@ function SkillsContainer({hashTagHandler}) {
         )
       })}
     </HashUl>
-    </article>
+    </div>
   )
 }
 

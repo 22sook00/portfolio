@@ -15,7 +15,7 @@ function IntroContainer() {
 
       <FlexBox col start> 
         <ImgBox>
-          <img src = '/img/introImg2.jpg' alt = '이미지사진'/>
+          <img src = '/img/introImg.jpg' alt = '이미지사진'/>
         </ImgBox>
         
         <TextBox>
