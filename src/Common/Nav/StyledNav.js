@@ -16,7 +16,7 @@ export const NavContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 1px 0.3rem hsl(0deg 0% 80% / 80%);
-  z-index: 100000;
+  z-index: 1000000;
   transition : all 0.5s;
   background : transparent;
   color : #fff;

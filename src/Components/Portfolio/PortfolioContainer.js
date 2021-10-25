@@ -33,7 +33,7 @@ function PortfolioContainer() {
     <PortfolioWrapper 
     theme = {ThemeMode[0]} id ='portfolio'>
     <Wrapper>
-      <Title>Portfolio</Title>
+      <Title>Project</Title>
       <SkillsContainer 
       hashTagHandler = {hashTagHandler}/>
 

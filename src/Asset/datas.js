@@ -148,7 +148,7 @@ export const contactDatas = [
     title : 'contact',
     mobile : '010-5035-2068',
     icon : './img/icons/google.png',
-    address : '22sook00@gmail.com',
+    email : '22sook00@gmail.com',
     desc : `프론트엔드 개발자, \n
     이숙영이 궁금하다면 언제든 연락주세요.`
   },

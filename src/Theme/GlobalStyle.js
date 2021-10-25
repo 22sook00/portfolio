@@ -53,7 +53,7 @@ font-family: 'NanumSquareRound';
 padding : 70px 50px;
 /* background-color : ${({darker})=>darker?'#e9ebf7':'#f8f7f4'}; */
 @media screen and (min-width: 767px) {
-  width : 40%;
+  width : 50%;
 };
 `
 export const Title = styled.h1`
