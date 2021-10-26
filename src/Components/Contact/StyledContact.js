@@ -11,7 +11,6 @@ const moving = keyframes`
   transform:rotate(55deg) ;
 }
 `
-
 export const GridBox = styled.div`
 width : 300px;
 @media screen and (min-width: 767px) {
@@ -44,11 +43,9 @@ box-shadow: rgb(0 0 0 / 10%) 0px 2px 16px 1px;
   }
 }
 `
-
 export const ContactImg = styled.img`
 width : 30px;height : 30px;
 object-fit: cover;
 border-radius: 50%;
 margin-right: 10px;
-
 `
