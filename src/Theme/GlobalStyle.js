@@ -57,13 +57,14 @@ font-weight: 800;
 margin:0 auto;
 font : inherit;
 font-family: 'NanumSquareRound';
-padding : 70px 50px;
+padding : 40px 30px;
 @media screen and (min-width: 767px) {
   width : 50%;
+  padding : 70px 50px;
 };
 `
 export const Title = styled.h1`
-font-size: ${({ navTitle }) => navTitle ? '18px' : '48px'};
+font-size: ${({ navTitle }) => navTitle ? '18px' : '38px'};
 font-weight : 900;
 text-align: center;
 margin : ${({ navTitle }) => navTitle ? '15px 0' : '40px'};
@@ -74,6 +75,7 @@ cursor: ${({ navTitle }) => navTitle ? 'pointer' : 'auto'};
 
 @media screen and (min-width: 767px) {
   margin : ${({ navTitle }) => navTitle ? '20px' : '30px 0 80px'};
+  font-size: ${({ navTitle }) => navTitle ? '20px' : '48px'};
 }
 `
 export const SubTitle = styled.p`

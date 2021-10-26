@@ -1,18 +1,18 @@
 import React from 'react'
-import {H2,H3,H4,GridBox,TextBox,ImgBox,ResumeBtn } from './StyledIntro'
+import {H2,H3,H4,GridBox,TextContent,TextBox,ImgBox,ResumeBtn } from './StyledIntro'
 import {Wrapper,FlexBox,Title} from '../../Theme/GlobalStyle'
 
 function IntroContainer() {
   return (
     <Wrapper id = 'aboutme'>
       <Title>About Me</Title>
-      <TextBox>      
+      <TextContent>      
         <H2>✈️공항 지상직에서 👩🏻‍💻프론트엔드 개발자로,</H2>
         <p>취미로 시작한 코딩에 재미를 붙여 이제는 본업으로 삼으려 합니다.<br/>
         8년간 공항에서의 직장 생활을 통해 얻은 경험들을 녹여내 프론트엔드 개발자로서 풀어내고 싶습니다. 
         그동안의 경험을 바탕으로 앞으로
         제가 지향하는 개발자의 모습은 다음과 같습니다.</p>
-      </TextBox>
+      </TextContent>
 
       <FlexBox col> 
         <ImgBox>
@@ -43,20 +43,20 @@ function IntroContainer() {
           <GridBox mobile>
             <TextBox>
               <H4>Education</H4>
-              <p>코드스테이츠 (CodeStates)<br/>Software Engineering 30기</p>
-              <p>2021.05 - 2021.10 (6months)</p>
-              <p>코리아 IT 아카데미</p>
-              <p>2020.11 - 2021.05 (6months)</p>
+              <p>🎓 코드스테이츠 (CodeStates)<br/>Software Engineering 30기</p>
+              <span>2021.05 - 2021.10 (6months)</span><br/>
+              <p>🎓 코리아 IT 아카데미</p>
+              <span>2020.11 - 2021.05 (6months)</span><br/>
             </TextBox>
             <TextBox>
               <H4>Skills</H4>
-              <H3>Language & Library</H3>
+              <H3>⚙️ Language & Library</H3>
               <p>React,Redux,Axios,Styled-components,<br/>
                 HTML5, CSS , JavaScript(ES6), ApexCharts,<br/>
                 Node.js , Express
               </p>
 
-              <H3>Tools & DevOps </H3>
+              <H3>⚙️ Tools & DevOps </H3>
               <p>GitHub ,AWS(S3),Vercel,Netlify,<br/>
               Notion,Miro,VisualStudio</p>
             </TextBox>

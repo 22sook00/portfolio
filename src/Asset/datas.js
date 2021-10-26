@@ -8,7 +8,8 @@ export const projectDatas = [
   {
     id : 1,
     type:'FinalProject',
-    name:'업투도어_UptoDoor', 
+    name:'UptoDoor', 
+    sub:'지역 경제 기반 정기구독 플랫폼',
     date : '2021.09.-2021.10 (4 Weeks / 4인)', 
     img : './img/uptodoor.png',
     primaryFunc : [
@@ -24,8 +25,7 @@ export const projectDatas = [
     ,
     skill : ['React','Redux','JavaScript','Styled-components','Axios','ApexCharts','AWS(S3)'],
     desc:[
-      `업투도어는 지역 경제 기반 정기구독 플랫폼 입니다. 
-      거주 지역을 중심으로 동네끼리 모여 이웃과의 연결을 통해 가치를 창출하고자 하는 공통의 목표를 가지고 있습니다.
+      `거주 지역을 중심으로 동네끼리 모여 이웃과의 연결을 통해 가치를 창출하고자 하는 공통의 목표를 가지고 있습니다.
       `,
       `
       소상공인은 장기고객을 확보 함으로써 안정적이고 반복적인 수익을 창출할 수 있습니다.
@@ -42,6 +42,7 @@ export const projectDatas = [
     id : 2,
     type:'FirstProject',
     name:'바우와우_BowWow', 
+    sub:'유기견 보호에 관심있는 사람들의 커뮤니티',
     date : '2021.08.-2021.9 (2 Weeks / 4인)', 
     img : './img/bowwow.png',
     primaryFunc : [
@@ -57,8 +58,6 @@ export const projectDatas = [
     ,
     skill : ['React','JavaScript','Styled-components','Axios'],
     desc:[
-      `유기견 보호에 관심있는 사람들의 커뮤니티 입니다.
-      `,
       `
       평소 유기견 보호에 관심이 많지만 접근이 어려웠거나 내가 알고있는 정보를 공유 할 수 있습니다.
       `,
@@ -72,12 +71,12 @@ export const projectDatas = [
     id : 3,
     type:'PersonalProject',
     name:'정해줘 내식사', 
+    sub:'매번 식사메뉴 정할때마다 고민인 사람들을 위한 웹/앱 어플리케이션',
     date : '2021.05 (1 Weeks / 개인)', 
     img : './img/choosemymeal.png',
     primaryFunc : [
       'React hooks 를 이용한 랜덤으로 식사메뉴 고르기 기능',
       '32강 토너먼트식 게임 또는 바로 랜덤메뉴 고르기가 가능',
-      'Netlify 배포'
     ],
     moveTo : 
       [
@@ -86,17 +85,17 @@ export const projectDatas = [
     ,
     skill : ['React','JavaScript','Styled-components'],
     desc:[
-      `결정장애들을 위한 식사메뉴 정하기 프로젝트 `,
       `
       먹고싶은것이 너무많으면 오히려 못고르는 개인적인 경험에 의해 기획한 첫번째 개인 프로젝트 입니다.
       `,
-      `React-hooks 만을 이용해 상태관리를 하였으며`
+      `React-hooks 만을 이용하여 상태관리 하였고 모바일에서도 사용할 수 있게 반응형으로 구현했습니다.`
     ]
   },
   { 
     id : 4,
     type:'PersonalProject',
-    name:'개인 포트폴리오',
+    name:'포트폴리오',
+    sub:'개인 웹/앱 포트폴리오',
     date : '2021.10 (1 Weeks / 개인)',  
     img : './img/portfolio.png',
     primaryFunc : [
@@ -113,7 +112,7 @@ export const projectDatas = [
       `포트폴리오 용도로 제작한 React 기반의 웹사이트 입니다. 
       `,
       `
-      배웠던 내용을 기반으로 하여 react-hooks 만을 이용하여 상태관리 하였습니다..
+      배웠던 내용을 기반으로 하여 react-hooks 만을 이용하여 상태관리 하였습니다.
       `,
     ]
   },

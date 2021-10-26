@@ -42,15 +42,15 @@ function ProjectContainer() {
             <PortBox 
             theme = {ThemeMode[0]}
             key = {el.id}>
-            <FlexBox between>
+              <SubTitle>{el.sub}</SubTitle>
               <PortTitle>{el.name}</PortTitle> 
-              <P>{el.type}</P>
-              </FlexBox>
 
               <hr/>
+
+              <H4>{el.type}</H4>
               <H4>{el.date}</H4>
               <PortImg src = {el.img} alt = {el.name}/>
-              <SubTitle>서비스 소개</SubTitle>
+              <SubTitle>서비스</SubTitle>
               {el.desc && el.desc.map((ele,idx)=>{
                 return (
                   <P key = {idx}> ❗️{ele}</P>
