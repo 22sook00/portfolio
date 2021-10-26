@@ -71,7 +71,7 @@ export const projectDatas = [
     id : 3,
     type:'PersonalProject',
     name:'정해줘 내식사', 
-    sub:'매번 식사메뉴 정할때마다 고민인 사람들을 위한 웹/앱 어플리케이션',
+    sub:'식사메뉴 정할때마다 고민인 사람들을 위한 웹/앱 어플리케이션',
     date : '2021.05 (1 Weeks / 개인)', 
     img : './img/choosemymeal.png',
     primaryFunc : [

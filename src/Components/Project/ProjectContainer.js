@@ -46,7 +46,6 @@ function ProjectContainer() {
               <PortTitle>{el.name}</PortTitle> 
 
               <hr/>
-
               <H4>{el.type}</H4>
               <H4>{el.date}</H4>
               <PortImg src = {el.img} alt = {el.name}/>
