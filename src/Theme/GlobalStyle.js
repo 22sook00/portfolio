@@ -29,17 +29,28 @@ export const GlobalStyle = createGlobalStyle`
   }
   a {
     text-decoration: none;
-    background : ${({theme})=>theme.bgColor};
-    color : ${({theme})=>theme.textColor};
+  }
+  button{
+    border: none;
+    cursor: pointer;
+    &:active,&:focus{
+      outline: none;
+    }
   }
 
   .makeBgColor{
     background : ${({theme})=>theme.bgColor};
-    color : ${({theme})=>theme.textColor};
+    color : ${({theme})=>theme.textColor} !important;
+  }
+  .makeBgColorText{
+    color : ${({theme})=>theme.textColor}!important;
   }
 `
+export const PointColor = 
+'linear-gradient(135deg, #4568DC 0%, #B06AB3 100%)'
+
 export const LightLandingBackground = 
-'linear-gradient(135deg, rgb(245, 247, 250) 0%, rgb(195, 207, 226) 100%)'
+'linear-gradient(135deg, #4568DC 0%, #B06AB3 100%)'
 
 export const DarkLandingBackground = 
 'linear-gradient(135deg, rgb(8, 27, 49) 0%, rgb(20,40,71) 100%)'
@@ -57,7 +68,7 @@ padding : 70px 50px;
 };
 `
 export const Title = styled.h1`
-font-size: ${({ navTitle }) => navTitle ? '18px' : '30px'};
+font-size: ${({ navTitle }) => navTitle ? '18px' : '38px'};
 font-weight : 900;
 text-align: center;
 cursor: ${({ navTitle }) => navTitle ? 'pointer' : 'auto'};
@@ -66,7 +77,6 @@ cursor: ${({ navTitle }) => navTitle ? 'pointer' : 'auto'};
   }
 
 @media screen and (min-width: 767px) {
-  font-size: 38px;
   margin:20px 0;
 }
 `
@@ -80,7 +90,6 @@ text-transform: capitalize;
 }
 `
 export const FlexBox = styled.div`
-/* width : 100%; */
 height : 100%;
 display: flex;
 align-items: center;
@@ -89,8 +98,4 @@ justify-content: ${({ between }) => between ? 'space-between' : 'center'};
 flex-direction: ${({ col }) => col ? 'column' : 'unset'};
 flex-wrap: ${({ wrapProps }) => wrapProps ? 'wrap' : 'nowrap'};
 background-color : ${({ mobileNav }) => mobileNav ? '#fff' : 'transparent'};
-@media screen and (min-width: 767px) {
-  justify-content: ${({ start }) => start ? 'flex-start' : 'center'};
-  
-}
 `

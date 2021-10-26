@@ -127,30 +127,26 @@ export const contactDatas = [
     title : 'git',
     icon : './img/icons/git.png',
     address : 'https://github.com/22sook00',
-    desc : ''
   },
   {
     id : 2,
     title : 'velog',
     icon : './img/icons/velog.png',
     address : 'https://velog.io/@22soook00',
-    desc : ''
   },
   {
     id : 3,
     title : 'notion',
     icon : './img/icons/notion.png',
     address : 'https://www.notion.so/95af01470fc44f19921fe1b11bcea504?v=a9f488210be34788a6568ae45945c038',
-    desc : '하루의 시작과 끝, 매일매일을 계획하고 기록합니다. '
   },
   {
     id : 4,
     title : 'contact',
+    name :'이숙영',
     mobile : '010-5035-2068',
     icon : './img/icons/google.png',
-    email : '22sook00@gmail.com',
-    desc : `프론트엔드 개발자, \n
-    이숙영이 궁금하다면 언제든 연락주세요.`
+    email : '22sook00@gmail.com'
   },
 
 ]

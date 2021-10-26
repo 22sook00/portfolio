@@ -5,7 +5,7 @@ export const PortfolioWrapper = styled.section`
 width : 100%;
 background : 
   ${({ theme }) => theme ==='light' ? 
-  '#ebecf5' 
+  '#fff' 
   :
   'rgb(8,23,49)'};
 `

@@ -7,8 +7,6 @@ import { Title } from '../../Theme/GlobalStyle';
 
 function Nav({ toggle, mode }) {
 
-  //scroll이 어느 시점을 넘어가면 클래스이름상태가 'makeBgColor'로 변경하기
-  //makeBgColor 가 생기면 나이트모드,화이트모드에 맞춰 백그라운드컬러변경해주기
   const [navBg , setNavBg] = useState('')
   const [scrollY, setScrollY] = useState(0);
 
@@ -48,7 +46,7 @@ function Nav({ toggle, mode }) {
       <Title navTitle>LSY.portfolio</Title>
       </Link>
       
-      <Navs>
+      <Navs >
         <NavUl>
         <Link 
         activeClass="active"
@@ -67,7 +65,7 @@ function Nav({ toggle, mode }) {
         smooth={true}
         offset={-70}
         duration={500}>
-          <NavLi className={navBg+'Text'}>Portfolio</NavLi>
+          <NavLi className={navBg+'Text'}>Project</NavLi>
           </Link>
 
         <Link 
@@ -84,8 +82,6 @@ function Nav({ toggle, mode }) {
           className={navBg+'Text'}
           onClick={toggle} mode={mode}>
             {ThemeMode[0] === 'light' ? 'Dark Mode' : 'White Mode'}
-            <div className = {mode === 'dark' ? 'toggle-container toggle--checked' : 'toggle-container'}/>
-            <div className = {mode === 'dark' ? 'toggle-circle toggle--checked' : 'toggle-circle'} />
           </NavLi>
         </NavUl>
       </Navs>

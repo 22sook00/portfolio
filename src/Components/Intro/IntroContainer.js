@@ -1,5 +1,5 @@
 import React from 'react'
-import {H2,H3,H4,TextBox,ImgBox } from './StyledIntro'
+import {H2,H4,TextBox,ImgBox,ResumeBtn } from './StyledIntro'
 import {Wrapper,FlexBox,Title} from '../../Theme/GlobalStyle'
 
 function IntroContainer() {
@@ -13,9 +13,9 @@ function IntroContainer() {
         제가 지향하는 개발자의 모습은 다음과 같습니다.</p>
       </TextBox>
 
-      <FlexBox col start> 
+      <FlexBox col> 
         <ImgBox>
-          <img src = '/img/introImg.jpg' alt = '이미지사진'/>
+          <img src = '/img/resumeImg.jpg' alt = '이숙영증명사진'/>
         </ImgBox>
         
         <TextBox>
@@ -35,6 +35,16 @@ function IntroContainer() {
           <p>협업으로 이루어지는 개발업무는 커뮤니케이션 스킬을 요구합니다.</p>
           <p>팀으로 일해왔기 때문에 유연하고 부드럽게, 하지만 정확하게 말하는 개발자가 될 수 있습니다.</p>
         </TextBox>
+
+        <a 
+        title = 'sook-resume'
+        href = 'https://www.notion.so/8e048de2e6564601984229e8f1011764'
+        target = 'blank'
+        >
+        <ResumeBtn>
+        ✔resume
+        </ResumeBtn>
+        </a>
 
       </FlexBox>
     </Wrapper>

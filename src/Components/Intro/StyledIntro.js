@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import {PointColor} from '../../Theme/GlobalStyle'
 
 export const H2 = styled.h2`
 font-size : 18px;
@@ -16,12 +16,10 @@ font-size : 16px;
 export const ImgBox = styled.div`
 >img{
 width : 200px;
-height : 200px;
-border-radius: 4px;
+border-radius: 6px;
 box-shadow: rgb(0 0 0 / 10%) 0px 2px 16px 1px;
 @media screen and (min-width: 767px) {
   width : 250px;
-  height : 250px;
   }
 }
 margin : 30px;
@@ -47,4 +45,12 @@ margin-bottom: 10px;
 @media screen and (min-width: 767px) {
   font-size : 20px;
 }
+`
+export const ResumeBtn = styled.button`
+background: ${PointColor};
+color : #fff;
+font-size : 20px;
+border-radius: 8px;
+padding : 20px;
+margin-top: 30px;
 `

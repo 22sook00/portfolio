@@ -1,12 +1,13 @@
 import styled from 'styled-components'
 import {DarkLandingBackground} from '../../Theme/GlobalStyle'
 
+//web nav
 export const NavContainer = styled.header`
   display: none;
 @media screen and (min-width: 767px) {
   width: 100%;
   height : 70px;
-  padding : 50px;
+  padding : 35px;
   box-sizing: border-box;
   position: fixed;
   top:0;
@@ -18,7 +19,7 @@ export const NavContainer = styled.header`
   box-shadow: 0 1px 0.3rem hsl(0deg 0% 80% / 80%);
   z-index: 1000000;
   transition : all 0.5s;
-  background : transparent;
+  backdrop-filter: blur(5px);
   color : #fff;
   font-weight: 800;
   font : inherit;
@@ -26,9 +27,6 @@ export const NavContainer = styled.header`
 }
 `
 export const Navs = styled.nav`  
->ul>a>.makeBgColorText,ul>.makeBgColorText{
-  color : #31302E;
-}
 >ul>a>li , ul>li{
   color : #fff;
   &:hover{
@@ -153,7 +151,7 @@ text-align: -webkit-match-parent;
     opacity: 0.7;
   }
 @media screen and (min-width: 767px) {
-  font-size: 20px;
+  font-size: 18px;
   display: inline-block;
   margin : 0 15px;
 }

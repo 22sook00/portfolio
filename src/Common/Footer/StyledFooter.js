@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {LightLandingBackground,DarkLandingBackground} from '../../Theme/GlobalStyle'
+import {DarkLandingBackground} from '../../Theme/GlobalStyle'
 
 export const FooterContainer = styled.footer`
 background : 
@@ -9,8 +9,8 @@ height : 100%;
 display: flex;
 justify-content: center;
 >div{
+  padding : 50px;
   text-align: left;
-  margin-top: 50px;
   >p{
   font-size: 14px;
   color : grey;
