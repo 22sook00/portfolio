@@ -1,6 +1,6 @@
 import React, {useEffect , useState} from 'react';
 import { useTheme } from '../../Context/themeProvider'
-import { Container , ThemeContainer, ScrollTopBtn } from './StyledAppLayout'
+import { Favicons, Container , ThemeContainer, ScrollTopBtn } from './StyledAppLayout'
 import { Link } from "react-scroll"
 import Nav from '../Nav/Nav'
 import MobileHeader from '../Nav/MobileHeader'
@@ -52,7 +52,6 @@ const AppLayout = ({children}) => {
       :
       <></>
       }
-      
     </Container>
   )
 }
