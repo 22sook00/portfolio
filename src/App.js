@@ -6,7 +6,7 @@ import AppLayout from './Common/AppLayout/AppLayout'
 
 import Landing from './pages/Landing'
 import Intro from './pages/Intro'
-import Portfolio from './pages/Portfolio'
+import Project from './pages/Project'
 import Contact from './pages/Contact'
 import Footer from './Common/Footer/Footer'
 
@@ -19,7 +19,7 @@ function App() {
         <AppLayout>
           <Landing/>
           <Intro/>
-          <Portfolio/>
+          <Project/>
           <Contact/>
           <Footer/>
         </AppLayout>

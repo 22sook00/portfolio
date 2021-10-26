@@ -9,8 +9,7 @@ function Footer() {
   return (
     <FooterContainer theme = {ThemeMode[0]}>
       <div>
-        <p>All rights</p>
-        <p>by LeeSookyoung.</p>
+        <p>© 2021 Lee Sookyoung.</p>
       </div>
     </FooterContainer>
   )

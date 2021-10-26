@@ -71,8 +71,6 @@ function MobileHeader({ toggle, mode }) {
         
         <NavLi onClick={toggle} mode={mode}>
         {ThemeMode[0] === 'light' ? 'Dark Mode' : 'White Mode'}
-          <div className = {mode === 'dark' ? 'toggle-container toggle--checked' : 'toggle-container'}/>
-          <div className = {mode === 'dark' ? 'toggle-circle toggle--checked' : 'toggle-circle'} />
         </NavLi>
       </NavUl>
       </MobileNavList>

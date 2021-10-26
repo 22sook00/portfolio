@@ -1,43 +1,43 @@
-/* eslint-disable jsx-a11y/heading-has-content */
-import React,{useState} from 'react'
-import {PortBox,SkillHashtagDiv} from './StyledPortfolio'
-import {PortfolioWrapper,HashLi,
-  PortTitle,PortImg,H4,P} from '../Portfolio/StyledPortfolio'
+import React from 'react'
+import {
+  PortBox,SkillHashtagDiv,
+  PortfolioWrapper,HashLi,
+  PortTitle,PortImg,H4,P} from './StyledProject'
 import {Wrapper,Title, SubTitle,FlexBox} from '../../Theme/GlobalStyle'
-import {portfolioDatas} from '../../Asset/datas'
+import {projectDatas} from '../../Asset/datas'
 import { useTheme } from '../../Context/themeProvider'
 
-import SkillsContainer from './SkillsContainer'
+// import SkillsContainer from './SkillsContainer'
 
-function PortfolioContainer() {
+function ProjectContainer() {
 
   const ThemeMode = useTheme();
-  const [selectPortDatas,setSelectPortDatas] = useState(portfolioDatas);
-  const hashTagHandler = (hashTag) => {
+  // const [selectPortDatas,setSelectPortDatas] = useState(projectDatas);
+  // const hashTagHandler = (hashTag) => {
 
-    if(hashTag === 'All'){
-      setSelectPortDatas(portfolioDatas)
-    }else{
-      const filtering = portfolioDatas.filter((el) => {
-        for(let i = 0; i<el.skill.length; i++){
-          if(el.skill[i]=== hashTag){
-            return el
-          }
-        }
-      })
-      setSelectPortDatas(filtering)
-    }
-  }
+  //   if(hashTag === 'All'){
+  //     setSelectPortDatas(projectDatas)
+  //   }else{
+  //     const filtering = projectDatas.filter((el) => {
+  //       for(let i = 0; i<el.skill.length; i++){
+  //         if(el.skill[i]=== hashTag){
+  //           return el
+  //         }
+  //       }
+  //     })
+  //     setSelectPortDatas(filtering)
+  //   }
+  // }
 
   return (
     <PortfolioWrapper 
     theme = {ThemeMode[0]} id ='portfolio'>
     <Wrapper>
       <Title>Project</Title>
-      <SkillsContainer 
-      hashTagHandler = {hashTagHandler}/>
+      {/* <SkillsContainer 
+      hashTagHandler = {hashTagHandler}/> */}
 
-        {selectPortDatas.map((el)=>{
+        {projectDatas.map((el)=>{
           return (
             <PortBox 
             theme = {ThemeMode[0]}
@@ -97,4 +97,4 @@ function PortfolioContainer() {
   )
 }
 
-export default PortfolioContainer
+export default ProjectContainer

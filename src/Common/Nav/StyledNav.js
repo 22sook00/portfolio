@@ -30,7 +30,7 @@ export const Navs = styled.nav`
 >ul>a>li , ul>li{
   color : #fff;
   &:hover{
-    opacity: 0.7;
+  opacity: 0.7;
   }
 }
 `
@@ -71,7 +71,7 @@ export const NavMobileContainer = styled.nav`
   border-radius: 20px;
   background : 
   ${({ theme }) => theme ==='light' ? 
-  '#f8f7f4;' 
+  '#f5f5fc;' 
   :
   DarkLandingBackground};
 
@@ -91,7 +91,7 @@ padding: .5rem 1rem;
 box-shadow: 0 1px 0.3rem hsl(0deg 0% 80% / 80%);
 background : 
   ${({ theme }) => theme ==='light' ? 
-  '#f8f7f4;' 
+  '#f5f5fc;' 
   :
   DarkLandingBackground};
 >.focus{
@@ -113,7 +113,7 @@ justify-content: space-between;
 align-items: center;
 background : 
   ${({ theme }) => theme ==='light' ? 
-  '#f8f7f4;' 
+  '#f5f5fc;' 
   :
   DarkLandingBackground};
 `
@@ -124,7 +124,7 @@ line-height: 35px;
 transition : all .3s;
 background : 
   ${({ theme }) => theme ==='light' ? 
-  '#f8f7f4;' 
+  '#f5f5fc;' 
   :
   DarkLandingBackground};
 >.focus{
@@ -148,7 +148,7 @@ cursor: pointer;
 display: table;
 text-align: -webkit-match-parent;
 &:hover{
-    opacity: 0.7;
+  opacity: 0.7;
   }
 @media screen and (min-width: 767px) {
   font-size: 18px;

@@ -1,5 +1,5 @@
 import React from 'react'
-import {HashUl,HashLi,} from './StyledPortfolio'
+import {HashUl,HashLi,} from './StyledProject'
 import {skillHashtag} from '../../Asset/datas'
 import { useTheme } from '../../Context/themeProvider'
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import {LandingGetStartedWrapper,BelowIcon,P} from '../Landing/StyledLanding'
+import {LandingGetStartedWrapper,P} from '../Landing/StyledLanding'
 import {FlexBox} from '../../Theme/GlobalStyle'
 
 function LandingGetStarted() {
@@ -7,7 +7,6 @@ function LandingGetStarted() {
     <LandingGetStartedWrapper>
       <FlexBox>
       <P>View<br/>More</P>
-      {/* <BelowIcon>👇🏼</BelowIcon> */}
       </FlexBox>
     </LandingGetStartedWrapper>
   )

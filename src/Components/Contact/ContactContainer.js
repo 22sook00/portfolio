@@ -1,6 +1,6 @@
 import React from 'react'
 import {Wrapper,Title,SubTitle, FlexBox} from '../../Theme/GlobalStyle'
-import {GridBox,ContactBox,ContactImg,P} from '../Contact/StyledContact'
+import {GridBox,ContactBox,P} from '../Contact/StyledContact'
 import { useTheme } from '../../Context/themeProvider'
 import { contactDatas } from '../../Asset/datas'
 

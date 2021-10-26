@@ -49,35 +49,31 @@ export const GlobalStyle = createGlobalStyle`
 export const PointColor = 
 'linear-gradient(135deg, #4568DC 0%, #B06AB3 100%)'
 
-export const LightLandingBackground = 
-'linear-gradient(135deg, #4568DC 0%, #B06AB3 100%)'
-
 export const DarkLandingBackground = 
-'linear-gradient(135deg, rgb(8, 27, 49) 0%, rgb(20,40,71) 100%)'
+'#142847'
 
 export const Wrapper = styled.section`
-/* width : 100%; */
 font-weight: 800;
 margin:0 auto;
 font : inherit;
 font-family: 'NanumSquareRound';
 padding : 70px 50px;
-/* background-color : ${({darker})=>darker?'#e9ebf7':'#f8f7f4'}; */
 @media screen and (min-width: 767px) {
   width : 50%;
 };
 `
 export const Title = styled.h1`
-font-size: ${({ navTitle }) => navTitle ? '18px' : '38px'};
+font-size: ${({ navTitle }) => navTitle ? '18px' : '48px'};
 font-weight : 900;
 text-align: center;
+margin : ${({ navTitle }) => navTitle ? '15px 0' : '40px'};
 cursor: ${({ navTitle }) => navTitle ? 'pointer' : 'auto'};
   &:hover{
     opacity : ${({ navTitle }) => navTitle ? '0.7' : '1'};
   }
 
 @media screen and (min-width: 767px) {
-  margin:20px 0;
+  margin : ${({ navTitle }) => navTitle ? '20px' : '30px 0 80px'};
 }
 `
 export const SubTitle = styled.p`
@@ -98,4 +94,7 @@ justify-content: ${({ between }) => between ? 'space-between' : 'center'};
 flex-direction: ${({ col }) => col ? 'column' : 'unset'};
 flex-wrap: ${({ wrapProps }) => wrapProps ? 'wrap' : 'nowrap'};
 background-color : ${({ mobileNav }) => mobileNav ? '#fff' : 'transparent'};
+@media screen and (min-width: 767px) {
+  align-items : ${({ flexStart }) => flexStart ? 'flex-start' : 'center'};
+}
 `

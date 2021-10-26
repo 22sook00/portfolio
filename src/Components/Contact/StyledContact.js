@@ -4,7 +4,7 @@ export const GridBox = styled.div`
 width : 300px;
 @media screen and (min-width: 767px) {
   width : 100%;
-  margin-top : 50px; 
+  margin : 80px 0; 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -41,9 +41,7 @@ background-position-x: -20px;
   background-image: url('./img/icons/notion.png');
 }
 &:nth-child(4){
-  background-size: initial;
-  background-image: url('./img/icons/google.png');
-  background-position-y: -100px;
+  padding : 20px 0 30px;
 }
 &:hover{
     transition: all 0.8s;
@@ -81,6 +79,6 @@ text-align: center;
 font-size: 18px;
 line-height: 26px;
 @media screen and (min-width: 767px) {
-  margin-top : 50px;
+  
 }
 `

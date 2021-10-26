@@ -4,11 +4,11 @@ export const skillHashtag = [
   'All','React','Redux','Styled-components',
   'JavaScript','TypeScript'
 ]
-export const portfolioDatas = [
+export const projectDatas = [
   {
     id : 1,
     type:'FinalProject',
-    name:'UptoDoor', 
+    name:'업투도어_UptoDoor', 
     date : '2021.09.-2021.10 (4 Weeks / 4인)', 
     img : './img/uptodoor.png',
     primaryFunc : [
@@ -22,7 +22,7 @@ export const portfolioDatas = [
       'https://uptodoor.shop/',
       'https://github.com/codestates/UptoDoor/wiki']
     ,
-    skill : ['React','Redux','Styled-components','Axios','ApexCharts','AWS(S3)'],
+    skill : ['React','Redux','JavaScript','Styled-components','Axios','ApexCharts','AWS(S3)'],
     desc:[
       `업투도어는 지역 경제 기반 정기구독 플랫폼 입니다. 
       거주 지역을 중심으로 동네끼리 모여 이웃과의 연결을 통해 가치를 창출하고자 하는 공통의 목표를 가지고 있습니다.
@@ -41,32 +41,31 @@ export const portfolioDatas = [
   {
     id : 2,
     type:'FirstProject',
-    name:'BowWow', 
+    name:'바우와우_BowWow', 
     date : '2021.08.-2021.9 (2 Weeks / 4인)', 
     img : './img/bowwow.png',
     primaryFunc : [
       '기본 CRUD 기능에 입각한 프로젝트',
       '유기견주들의 생생한 입양 및 봉사후기 및 봉사활동일정을 조회',
-      '전국의 유기견 보호소 조회',
+      '전국의 유기견 보호소 위치 조회 가능',
       '게시글 및 댓글 작성 조회 수정 삭제 가능'
     ],
     moveTo : 
       [
-      'https://uptodoor.shop/',
-      'https://github.com/codestates/UptoDoor/wiki']
+      'https://eteammerge.shop/',
+      'https://github.com/codestates/BowWow/wiki']
     ,
-    skill : ['React','Styled-components','Axios'],
+    skill : ['React','JavaScript','Styled-components','Axios'],
     desc:[
-      `유기견 보호에 관심이 많지만 어떻게 접근해야 할지 어려우셨나요? 
-      혹은, 내가 알고있는 정보를 공유하고 싶으신가요?
+      `유기견 보호에 관심있는 사람들의 커뮤니티 입니다.
       `,
       `
-      BowWow 에서 유기견에 대한 모든 정보를 공유할 수 있습니다.
+      평소 유기견 보호에 관심이 많지만 접근이 어려웠거나 내가 알고있는 정보를 공유 할 수 있습니다.
       `,
-      `
-      서로가 Win-win 할 수 있는 환경에 조금이나마 보탬이 되기 위해 
-      우리동네 구독서비스 uptodoor를 기획했습니다.
-      `
+      `백엔드와 팀을 이루어 처음으로 협업한 프로젝트 입니다. 
+      이론으로 알고 있었던 데이터를 실제로 주고받는 방식과 프론트엔드 팀원과 직접 UI/UX 를 구상하고 의논하여 
+      결과물을 내었다는 점에서 의사소통의 중요성도 함께 깨달을 수 있었던 
+      의미있는 프로젝트 였습니다. `
     ]
   },
   { 
@@ -83,40 +82,38 @@ export const portfolioDatas = [
     moveTo : 
       [
       'https://choose-my-meal.netlify.app/',
-      'https://github.com/codestates/UptoDoor/wiki']
+      'wiki 작성예정']
     ,
-    skill : ['React','Styled-components'],
+    skill : ['React','JavaScript','Styled-components'],
     desc:[
-      `결정장애들을 위한 식사메뉴 정하기 프로젝트 
-      `,
+      `결정장애들을 위한 식사메뉴 정하기 프로젝트 `,
       `
-      먹고싶은것이 너무많으면 오히려 못고른다.
-      개인적인 경험에 의해 만들어진 랜덤메뉴 고르기 어플리케이션입니다.
+      먹고싶은것이 너무많으면 오히려 못고르는 개인적인 경험에 의해 기획한 첫번째 개인 프로젝트 입니다.
       `,
-      `간단하지만 언젠간 꼭 유용한 어플리케이션.`
+      `React-hooks 만을 이용해 상태관리를 하였으며`
     ]
   },
   { 
     id : 4,
     type:'PersonalProject',
-    name:'포트폴리오',
+    name:'개인 포트폴리오',
     date : '2021.10 (1 Weeks / 개인)',  
-    img : './',
+    img : './img/portfolio.png',
     primaryFunc : [
-      'use.context 로 화이트모드 / 다크모드 기능 구현 ',
-      'scroll 기능',
-      'aws 배포예정. 굳이? vercel 해볼까.'],
+      'use.context 로 white / dark 모드 구현 ',
+      'react-scroll 사용하여 각 section, scroll to top 기능구현',
+      'flex/grid 를 적절히 활용하여 카드형식으로 구현'],
     moveTo : 
       [
       'https://uptodoor.shop/',
-      'https://github.com/codestates/UptoDoor/wiki']
+      'https://github.com/22sook00/portfolio/wiki']
     ,
-    skill : ['React','Styled-components'],
+    skill : ['React','JavaScript','Styled-components'],
     desc:[
-      `포트폴리오 용도로 제작한 React 기반의 웹사이트 
+      `포트폴리오 용도로 제작한 React 기반의 웹사이트 입니다. 
       `,
       `
-      배웠던 내용을 기반으로 만든 포트폴리오.
+      배웠던 내용을 기반으로 하여 react-hooks 만을 이용하여 상태관리 하였습니다..
       `,
     ]
   },

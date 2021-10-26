@@ -1,23 +1,13 @@
 import styled from 'styled-components'
-import { DarkLandingBackground } from '../../Theme/GlobalStyle'
+import { DarkLandingBackground, PointColor } from '../../Theme/GlobalStyle'
 
 export const PortfolioWrapper = styled.section`
 width : 100%;
-background : 
-  ${({ theme }) => theme ==='light' ? 
-  '#fff' 
-  :
-  'rgb(8,23,49)'};
-`
-export const GridDiv = styled.div`
-
-@media screen and (min-width: 767px) {
-}
 `
 export const PortBox = styled.article`
 background : 
   ${({ theme }) => theme ==='light' ? 
-  '#f8f7f4'
+  '#fff'
   :
   DarkLandingBackground};
 cursor: pointer;
@@ -32,12 +22,16 @@ box-shadow: rgb(0 0 0 / 10%) 0px 2px 16px 1px;
   transition: 0.5s;
 }
 @media screen and (min-width: 767px) {
-  
+  padding : 30px;
 }
 `
 export const PortTitle = styled.h2`
 font-size: 24px;
 font-weight: 700;
+margin : 10px 0 20px;
+@media screen and (min-width: 767px) {
+  font-size: 28px;
+}
 `
 export const PortImg = styled.img`
 width : 100%;
@@ -69,11 +63,9 @@ line-height: 24px;
     color : #007bff;
   }
 }
-@media screen and (min-width: 767px) {
-}
 `
 export const SkillHashtagDiv = styled.div`
-text-align: right;
+/* text-align: right; */
 `
 export const HashUl = styled.ul`
 list-style: none;
@@ -90,9 +82,12 @@ width: fit-content;
 background-color: rgb(94, 131, 223);
 color : #fff;
 border-radius: 5px;
-font-size: ${({ smaller }) => smaller ? '10px' : '14px'};
-margin: ${({ smaller }) => smaller ? '3px' : '5px 3px'};
+font-size: 14px;
+margin: 5px 3px;
 &:hover{
-  background-color: rgb(124, 131, 223);
+  background: ${PointColor};
+}
+@media screen and (min-width: 767px) {
+
 }
 `

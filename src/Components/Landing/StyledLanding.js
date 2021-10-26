@@ -31,19 +31,20 @@ font-family: 'NanumSquareRound';
 `
 export const TextBox = styled.div`
 text-align: left;
-@media screen and (min-width: 767px) {
-}
+
 `
 export const H1 = styled.h1`
 font-size : 52px;
 font-weight : 900;
+text-shadow: 3px 3px 20px #02022b;
 @media screen and (min-width: 767px) {
   font-size : 62px;
 }
 `
 export const H2 = styled.h2`
-font-size : 26px;
+font-size : 22px;
 text-align: right;
+font-weight: 400;
 font-family: 'NanumSquareRound';
 margin : 15px 0;
 line-height: 35px;
@@ -52,26 +53,25 @@ line-height: 35px;
 }
 `
 export const H3 = styled.h3`
-font-size : 20px;
+font-size : 18px;
 margin : 30px 0 20px 0;
 line-height: 30px;
+font-weight: 400;
 font-family: 'NanumSquareRound';
 @media screen and (min-width: 767px) {
   font-size : 24px;
-  text-align: center;
 }
-`
-export const BelowIcon = styled.h1`
-font-size : 38px;
-margin-left : 10px;
 `
 export const P = styled.p`
 font-size : 20px;
 line-height: 30px;
 text-align: right;
 font-family: 'NanumSquareRound';
->span{
-  font-weight : 900;
-  /* color : magenta; */
+&:hover{
+  transition: all 0.5s;
+  background: -webkit-linear-gradient(left, #4568DC, #B06AB3);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
 }
 `
