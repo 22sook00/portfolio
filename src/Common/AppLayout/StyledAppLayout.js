@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { PointColor } from '../../Theme/GlobalStyle';
 
 export const Container = styled.div`
   min-height: 100%;

@@ -64,16 +64,17 @@ function ProjectContainer() {
               })}
               <SubTitle>보러 가기</SubTitle>   
               <P>👉 Domain <a 
-              href= 'https://uptodoor.shop/' 
+              href= 
+              {el.moveTo && el.moveTo[0]}
               target = 'blank'
-              title = 'uptodoor site'>
+              title = {el.name+' 사이트'}>
                 
               {el.moveTo && el.moveTo[0]}
               </a></P>
               <P>👉 Git <a 
-              href = 'https://github.com/codestates/UptoDoor/wiki' 
+              href = {el.moveTo && el.moveTo[1]}
               target = 'blank'
-              title = 'uptodoor wiki'>
+              title = {el.name+' wiki'}>
               {el.moveTo && el.moveTo[1]}
               </a></P>
 

@@ -63,6 +63,9 @@ line-height: 24px;
     color : #007bff;
   }
 }
+@media screen and (min-width: 767px) {
+  font-size: 16px;
+}
 `
 export const SkillHashtagDiv = styled.div`
 /* text-align: right; */
