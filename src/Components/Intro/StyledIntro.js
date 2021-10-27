@@ -64,7 +64,8 @@ export const TextBox = styled.article`
 padding : 20px 0;
 transition: all .3s;
 line-height: 20px;
-border-radius: 18px;
+border-radius: 18px;  
+width : 100%;
 >p{
   line-height: 26px;
   font-size: 14px;

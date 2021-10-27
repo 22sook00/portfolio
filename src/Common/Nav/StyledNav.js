@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {DarkLandingBackground} from '../../Theme/GlobalStyle'
+import {DarkLandingBackground, PointColor} from '../../Theme/GlobalStyle'
 
 //web nav
 export const NavContainer = styled.header`
@@ -103,6 +103,62 @@ background :
   transition : all 0.3s;
 }
 `
+export const MobileHamburger = styled.div`
+&.menu-trigger{
+  width: 30px;
+  height : 30px;
+  margin-top : 5px; 
+  display: inline-block;
+  transition: all 0.4s;
+  box-sizing: border-box;
+
+  &:hover >#top{
+    background: ${PointColor};
+    transform: rotate(90deg) scale(0.75,1);
+  }
+  &:hover >#middle-1{
+    background: ${PointColor};
+    width : 15px;
+    transform: rotate(45deg) translate(1px,-2px);
+  }
+  &:hover >#middle-2{
+    background: ${PointColor};
+    width : 15px;
+    transform: rotate(-45deg) translate(-1px,-2px);
+  }
+  &:hover >#bottom{
+    background: ${PointColor};
+    margin-top : 5px;
+  }
+}
+>span{
+  display: inline-block;
+  transition: all 0.4s;
+  box-sizing: border-box;
+  left: 0;
+  width: 100%;
+  margin : 3px 0;
+  background:  
+  ${({ theme }) => theme ==='light' ? 
+  '#31302e' 
+  :
+  'rgb(173,183,218)'};
+  border-radius: 4px;
+
+  &.bar-1{
+    height: 2px;
+    width: 30px;
+    display: block;
+    float: left;
+  }
+  &.bar-2{
+    height: 2px;
+    display: block;
+    float: left;
+    width : 15px;
+  }
+}
+`
 export const MobileNavBar = styled.div`
 width : 100%;
 height : 50px;
@@ -143,7 +199,11 @@ padding: 0;
 export const NavLi = styled.li`
 font-size: 16px;
 font-weight: 900;
-color : grey;
+color:  
+  ${({ theme }) => theme ==='light' ? 
+  '#31302e' 
+  :
+  'rgb(173,183,218)'};
 cursor: pointer;
 display: table;
 text-align: -webkit-match-parent;

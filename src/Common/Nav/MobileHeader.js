@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import {MobileHeaderContainer,NavUl,NavLi,
-  MobileNavWrapper,MobileNavBar,
+  MobileNavWrapper,MobileNavBar,MobileHamburger,
   MobileNavList} from './StyledNav'
 import { Link } from "react-scroll"
 import { useTheme } from '../../Context/themeProvider'
@@ -30,9 +30,16 @@ function MobileHeader({ toggle, mode }) {
         duration={500}>
       <Title navTitle>LSY.portfolio</Title>
       </Link>
-      <i className="fas fa-bars"
-      onClick = {selectHandler}
-      ></i>
+
+      <MobileHamburger theme = {ThemeMode[0]}
+      onClick = {selectHandler} 
+      className = 'menu-trigger'>
+        <span id = 'top' className = 'bar-1'></span>
+        <span id = 'middle-1' className = 'bar-2'></span>
+        <span id = 'middle-2' className = 'bar-2'></span>
+        <span id = 'bottom' className = 'bar-1'></span>
+      </MobileHamburger>
+
       </MobileNavBar>
 
       <MobileNavList 
@@ -46,7 +53,7 @@ function MobileHeader({ toggle, mode }) {
         smooth={true}
         offset={-70}
         duration={500}>
-        <NavLi>About Me</NavLi>
+        <NavLi theme = {ThemeMode[0]}>About Me</NavLi>
       </Link>
 
         <Link 
@@ -56,7 +63,7 @@ function MobileHeader({ toggle, mode }) {
         smooth={true}
         offset={-70}
         duration={500}>
-        <NavLi>Portfolio</NavLi>
+        <NavLi theme = {ThemeMode[0]}>Portfolio</NavLi>
         </Link>
 
         <Link 
@@ -66,10 +73,10 @@ function MobileHeader({ toggle, mode }) {
         smooth={true}
         offset={-70}
         duration={500}>
-        <NavLi>Contact</NavLi>
+        <NavLi theme = {ThemeMode[0]}>Contact</NavLi>
         </Link>
         
-        <NavLi onClick={toggle} mode={mode}>
+        <NavLi onClick={toggle} mode={mode} theme = {ThemeMode[0]}>
         {ThemeMode[0] === 'light' ? 'Dark Mode' : 'White Mode'}
         </NavLi>
       </NavUl>

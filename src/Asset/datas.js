@@ -102,7 +102,7 @@ export const projectDatas = [
       'flex/grid 를 적절히 활용하여 카드형식으로 구현'],
     moveTo : 
       [
-      'https://uptodoor.shop/',
+      'http://lee-sookyoung.me/',
       'https://github.com/22sook00/portfolio/wiki']
     ,
     skill : ['React','JavaScript','Styled-components'],

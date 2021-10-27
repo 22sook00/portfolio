@@ -31,10 +31,10 @@ function Nav({ toggle, mode }) {
   const ThemeMode = useTheme();
 
   return (
-
     <NavContainer 
     className = {navBg}
-    theme = {ThemeMode[0]}>
+    theme = {ThemeMode[0]}
+    >
       
       <Link 
         activeClass="active"

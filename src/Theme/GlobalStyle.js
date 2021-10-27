@@ -9,6 +9,11 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-display: swap; 
     -webkit-font-smoothing : antialiased;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar{
+      display: none;
+    };
     background : ${({theme})=>theme.bgColor};
     color : ${({theme})=>theme.textColor};
     transition : all 0.5s;

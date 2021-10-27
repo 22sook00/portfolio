@@ -3,7 +3,7 @@ import {
   PortBox,SkillHashtagDiv,
   PortfolioWrapper,HashLi,
   PortTitle,PortImg,H4,P} from './StyledProject'
-import {Wrapper,Title, SubTitle,FlexBox} from '../../Theme/GlobalStyle'
+import {Wrapper,Title, SubTitle} from '../../Theme/GlobalStyle'
 import {projectDatas} from '../../Asset/datas'
 import { useTheme } from '../../Context/themeProvider'
 
@@ -68,14 +68,13 @@ function ProjectContainer() {
               {el.moveTo && el.moveTo[0]}
               target = 'blank'
               title = {el.name+' 사이트'}>
-                
-              {el.moveTo && el.moveTo[0]}
+              {el.name+' 배포 사이트'}
               </a></P>
               <P>👉 Git <a 
               href = {el.moveTo && el.moveTo[1]}
               target = 'blank'
               title = {el.name+' wiki'}>
-              {el.moveTo && el.moveTo[1]}
+              {el.name+' wiki'}
               </a></P>
 
               <SubTitle>사용 스택</SubTitle>   
