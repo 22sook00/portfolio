@@ -9,16 +9,17 @@ background-blend-mode: multiply;
 background-color : grey;
 background-repeat: no-repeat;
 background-size: cover;
-/* border-radius: 0 0 40px 40px; */
 color : #fff;
+
 font-weight: 800;
 padding : 0 100px;
 box-sizing: border-box;
 font : inherit;
-font-family: 'Nanum Gothic Coding';
+
+font-family: 'Ubuntu', sans-serif;
 font-weight: 900;
 @media screen and (min-width: 767px) {
-  background-image: url('./img/webImg.png');
+  /* background-image: url('./img/webImg.png'); */
 }
 `
 
@@ -34,8 +35,8 @@ text-align: left;
 
 `
 export const H1 = styled.h1`
-font-size : 52px;
-font-weight : 900;
+font-size : 50px;
+font-weight : 300;
 text-shadow: 3px 3px 20px #02022b;
 @media screen and (min-width: 767px) {
   font-size : 62px;

@@ -11,7 +11,7 @@ function ContactContainer() {
     theme = {ThemeMode[0]}
     id = 'contact'>
       <Title>Contact</Title>
-      <P>하루의 시작과 끝,<br/> 매일매일을 계획하고 기록합니다.</P>
+      <P>하루의 시작과 끝<br/> 매일매일을 계획하고 기록하는 개발자, <br/> <span>이숙영</span> 에게 연락주세요.</P>
       <GridBox>
       {contactDatas.map((el)=>{
         return (

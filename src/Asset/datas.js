@@ -54,7 +54,7 @@ export const projectDatas = [
     moveTo : 
       [
       'https://eteammerge.shop/',
-      'https://github.com/codestates/BowWow/wiki']
+      '']
     ,
     skill : ['React','JavaScript','Styled-components','Axios'],
     desc:[
@@ -70,7 +70,7 @@ export const projectDatas = [
     id : 3,
     type:'PersonalProject',
     name:'정해줘 내식사', 
-    sub:'식사메뉴 정할때마다 고민인 사람들을 위한 웹/앱 어플리케이션',
+    sub:'결정장애들을 위한 웹/앱 어플리케이션',
     date : '2021.05 (1 Weeks / 개인)', 
     img : './img/choosemymeal.png',
     primaryFunc : [
@@ -80,11 +80,11 @@ export const projectDatas = [
     moveTo : 
       [
       'https://choose-my-meal.netlify.app/',
-      'wiki 작성예정']
+      'https://github.com/22sook00/chooseMyMeal']
     ,
-    skill : ['React','JavaScript','Styled-components'],
+    skill : ['React','JavaScript','Styled-components','Netlify'],
     desc:[
-      `먹고싶은것이 너무많으면 오히려 못고르는 개인적인 경험에 의해 기획한 첫번째 개인 프로젝트 입니다.
+      `결정장애가 심해 식사메뉴 정할때마다 고민인 개인적인 경험을 바탕으로 기획한 첫번째 개인 프로젝트 입니다.
       `,
       `React-hooks 만을 이용하여 상태관리 하였고 모바일에서도 사용할 수 있게 반응형으로 구현했습니다.`
     ]
@@ -103,9 +103,9 @@ export const projectDatas = [
     moveTo : 
       [
       'http://lee-sookyoung.me/',
-      'https://github.com/22sook00/portfolio/wiki']
+      'https://github.com/22sook00/portfolio']
     ,
-    skill : ['React','JavaScript','Styled-components'],
+    skill : ['React','JavaScript','Styled-components','AWS(Route53)','Vercel'],
     desc:[
       `포트폴리오 용도로 제작한 React 기반의 웹사이트 입니다. 
       `,

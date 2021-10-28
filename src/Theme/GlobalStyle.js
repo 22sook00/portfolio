@@ -17,10 +17,11 @@ export const GlobalStyle = createGlobalStyle`
     background : ${({theme})=>theme.bgColor};
     color : ${({theme})=>theme.textColor};
     transition : all 0.5s;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'Ubuntu', sans-serif;
 
     @font-face {
     font-family: 'NanumSquareRound';
-    font-family: 'Nanum Gothic Coding', monospace;
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
     font-weight: normal;
     font-style: normal;

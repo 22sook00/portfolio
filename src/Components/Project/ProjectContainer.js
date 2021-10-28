@@ -70,12 +70,15 @@ function ProjectContainer() {
               title = {el.name+' 사이트'}>
               {el.name+' 배포 사이트'}
               </a></P>
+              {el.moveTo && el.moveTo[1] !== '' ?
               <P>👉 Git <a 
               href = {el.moveTo && el.moveTo[1]}
               target = 'blank'
-              title = {el.name+' wiki'}>
-              {el.name+' wiki'}
+              title = {el.name+' READ.ME'}>
+              {el.name+' READ.ME'}
               </a></P>
+              :<></>
+              }
 
               <SubTitle>사용 스택</SubTitle>   
               <SkillHashtagDiv>
