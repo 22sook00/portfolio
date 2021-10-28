@@ -1,70 +1,67 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### 💕 🙏🏻 Thanks For Visiting my Git 
+# LEE SOOKYOUNG_Portfolio
+<br/>
+<div align = 'center'>
+<img src = 'https://user-images.githubusercontent.com/80618616/139230827-4ade8ed5-6e52-4790-886a-10b23c2c9724.gif' width = 60%; />
+</div>
+<br/>
 
-## Available Scripts
+프론트앤드 개발자 이숙영의 개인 포트폴리오 READ.ME 입니다.<br/>
+📎 배포 사이트 : https://lee-sookyoung.me/
 
-In the project directory, you can run:
+## Stack <br/>
+### FrontEnd 
+`React` `ReactHooks` `JavaScript` `Styled-Components`
+### Deploy 
+`Vercel` `AWS(Route53)` 
 
-### `npm start`
+## Pages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Main
+<div align = 'center'>
+<img src = 'https://user-images.githubusercontent.com/80618616/139232268-0b97b51f-2602-426e-a16a-c955fc01ad43.png' width = 50%; />
+<img src = 'https://user-images.githubusercontent.com/80618616/139234173-50b97ebb-f0f7-4cae-9346-c08ddf78db41.png' width = 40%; />
+</div>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+사이트의 메인 페이지 입니다.<br/>
+NavBar 는 항상 상단에 위치하여 원하는곳으로 바로 이동이 가능하며,<br/>
+나이트모드를 구현하여 원하는 대로 화면의 밝기를 조정 할 수 있습니다.<br/>
 
-### `npm test`
+### About Me
+<div align = 'center'>
+<img src = 'https://user-images.githubusercontent.com/80618616/139233198-1919be29-d37a-4adb-8bf4-060fc8bcc780.png' width = 43%; />
+<img src = 'https://user-images.githubusercontent.com/80618616/139234608-2d5de436-b34c-4f08-8d9e-b9ab97613af7.png' width = 40%; />
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+간단한 자기소개와 프론트엔드 개발자로서 나아가고자 하는 방향을 작성했습니다.<br/>
+그동안 받은 교육과 사용 가능 스택을 작성하였으며<br/>
+Resume 버튼 클릭 시 바로 노션 이력서로 이동 가능합니다.<br/>
 
-### `npm run build`
+### Project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<div align = 'center'>
+<img src = 'https://user-images.githubusercontent.com/80618616/139233527-bafed98e-8e3d-40ba-97df-b570929fab03.png' width = 41%; />
+<img src = 'https://user-images.githubusercontent.com/80618616/139235299-512bd061-fa71-4ff1-bb41-c8e7dd23d675.png' width = 40%; />
+</div>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+프론트엔드 개발을 배우며 습득한 지식을 바탕으로 만든 프로젝트에 대한 정보를 볼수 있습니다.<br/>
+총 두개의 협업프로젝트, 두개의 개인프로젝트로 이루어져 있습니다.<br/>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Contact
 
-### `npm run eject`
+<div align = 'center'>
+<img src = 'https://user-images.githubusercontent.com/80618616/139233771-4f6b6125-9dad-407a-ac27-39150135e1ad.png' width = 40%; />
+<img src = 'https://user-images.githubusercontent.com/80618616/139235365-2d87c058-8c4c-44fd-b63f-059b0eb3e6db.png' width = 40%; />
+</div>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+언제든 연락받을 수 있는 모바일과 이메일을 기재했습니다.<br/>
+또한 현재 관리중인 Git, Blog, Notion 사이트 링크를 채워 넣었습니다.<br/>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 반응형
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+모바일에서도 볼 수 있도록 반응형으로 구현하였습니다.
+<div align = 'center'>
+<img src = 'https://user-images.githubusercontent.com/80618616/139230323-ec5eef4c-6d0c-44d0-8770-12eb1589cf78.gif' width = 40%; />
+<img src = 'https://user-images.githubusercontent.com/80618616/139232157-06f9d2d6-84d6-47d4-bf0b-4b50f7b822b8.gif' width = 40%; />
+</div>
