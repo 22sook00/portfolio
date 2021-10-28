@@ -8,7 +8,7 @@
 <br/>
 
 프론트앤드 개발자 이숙영의 개인 포트폴리오 READ.ME 입니다.<br/>
-📎 배포 사이트 : https://lee-sookyoung.me/
+📎 배포 사이트 : https://lee-sookyoung.me
 
 ## ⚙️ Stack <br/>
 ### FrontEnd 
