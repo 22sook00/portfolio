@@ -78,6 +78,12 @@ export const P = styled.p`
 text-align: center;
 font-size: 18px;
 line-height: 26px;
+>span{
+  background: -webkit-linear-gradient(45deg, #4568DC, #B06AB3);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+}
 @media screen and (min-width: 767px) {
   
 }
