@@ -10,13 +10,13 @@
 프론트앤드 개발자 이숙영의 개인 포트폴리오 READ.ME 입니다.<br/>
 📎 배포 사이트 : https://lee-sookyoung.me/
 
-## Stack <br/>
+## ⚙️ Stack <br/>
 ### FrontEnd 
 `React` `ReactHooks` `JavaScript` `Styled-Components`
 ### Deploy 
 `Vercel` `AWS(Route53)` 
 
-## Pages
+## 📃 Pages
 
 ### Main
 <div align = 'center'>
