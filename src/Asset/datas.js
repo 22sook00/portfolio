@@ -74,19 +74,19 @@ export const projectDatas = [
     date : '2021.05 (1 Weeks / 개인)', 
     img : './img/choosemymeal.png',
     primaryFunc : [
-      'React hooks 를 이용한 랜덤으로 식사메뉴 고르기 기능',
+      '랜덤으로 식사메뉴 고르기 기능',
       '32강 토너먼트식 게임 또는 바로 랜덤메뉴 고르기가 가능',
     ],
     moveTo : 
       [
-      'https://choose-my-meal.netlify.app/',
-      'https://github.com/22sook00/chooseMyMeal']
+      'https://my-meal.vercel.app/',
+      'https://github.com/22sook00/MyMeal']
     ,
-    skill : ['React','JavaScript','Styled-components','Netlify'],
+    skill : ['React(Class+Hooks)','JavaScript','Styled-components','Vercel'],
     desc:[
-      `결정장애가 심해 식사메뉴 정할때마다 고민인 개인적인 경험을 바탕으로 기획한 첫번째 개인 프로젝트 입니다.
-      `,
-      `React-hooks 만을 이용하여 상태관리 하였고 모바일에서도 사용할 수 있게 반응형으로 구현했습니다.`
+      `결정장애가 심해 식사메뉴 정할때마다 고민인 개인적인 경험을 바탕으로 기획한 첫번째 개인 프로젝트 입니다.`,
+      `React 클래스형 컴포넌트와 함수형 컴포넌트 두개를 섞어 코드를 작성했습니다.`,
+      `모바일에서도 사용할 수 있게 반응형으로 구현했습니다.`
     ]
   },
   { 
