@@ -74,7 +74,7 @@ export const projectDatas = [
     date : '2021.05 (1 Weeks / 개인)', 
     img : './img/choosemymeal.png',
     primaryFunc : [
-      'React hooks 를 이용한 랜덤으로 식사메뉴 고르기 기능',
+      '랜덤으로 식사메뉴 고르기 기능',
       '32강 토너먼트식 게임 또는 바로 랜덤메뉴 고르기가 가능',
     ],
     moveTo : 
