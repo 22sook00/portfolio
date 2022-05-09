@@ -1,5 +1,5 @@
 
-#### 💕 🙏🏻 Thanks For Visiting my Git 
+#### 💕 🙏🏻 Thank you For Visiting my Git 
 # LEE SOOKYOUNG_Portfolio
 <br/>
 <div align = 'center'>
